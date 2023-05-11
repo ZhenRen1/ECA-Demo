@@ -1,9 +1,9 @@
 # ECA-Demo
 ECA Demo is a MATLAB repository to share the code and a small-scale example of the simulator and reconstruction engine described in "Enhancement-Constrained Acceleration: A Robust Reconstruction Framework in Breast DCE-MRI"[1]. \
 \
-The minimal dataset of "Pharmacokinetic Analysis of Enhancement-Constrained Acceleration (ECA) reconstruction-based high temporal resolution breast DCE-MRI" is publicly available and can be found at https://figshare.com/articles/dataset/Phantoms_to_validate_ECA_reconstruction/22806485 \
+The minimal dataset of "Pharmacokinetic Analysis of Enhancement-Constrained Acceleration (ECA) reconstruction-based high temporal resolution breast DCE-MRI" is publicly available and can be found [here](https://figshare.com/articles/dataset/Phantoms_to_validate_ECA_reconstruction/22806485) \
 \
-More detail on the reconstruction algorithm and input/output data strucutres can be found in Algorithms_and_data_structures.pdf.
+More detail on the reconstruction algorithm and input/output data strucutres can be found in [Algorithms_and_data_structures.pdf](Algorithms_and_data_structures.pdf).
 
 
 # Installation
