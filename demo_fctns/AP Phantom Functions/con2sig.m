@@ -35,5 +35,5 @@ p = 1;
 sig0 = p*exp(-TE/T2_st)*sin(FA)*(1 - S_c0)./(1 - cos(FA)*S_c0);
 %sig = p*exp(-TE/T2_st)*sin(FA)*(1 - S_c)./(1 - cos(FA)*S_c).*(con > 0);
 sig = p*exp(-TE/T2_st)*sin(FA)*(1 - S_c)./(1 - cos(FA)*S_c);
-sig = sig-sig0;
+sig = (sig-sig0)/sig0;
 end

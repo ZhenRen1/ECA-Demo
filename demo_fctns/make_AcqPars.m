@@ -16,10 +16,9 @@ AcqPars.randomseed = rng;
 
 AcqPars.acqtimeres = 50;
 
-AcqPars.nscan = 16;%12;
-AcqPars.totalscantime = 56000;
-AcqPars.onescantime = 3500;%3500;
-
+AcqPars.totalscantime = 70000;%56000;
+AcqPars.onescantime = 10000;%3500;
+AcqPars.nscan = AcqPars.totalscantime/AcqPars.onescantime;
 AcqPars.phantomtimeres = 50;
 
 % AcqPars.stddev = Phant.PhantomPars.KspStdDev;

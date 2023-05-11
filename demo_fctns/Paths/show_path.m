@@ -1,9 +1,9 @@
-function [h] = show_path(Path,time)
+function [h] = show_path(Path,AcqPars,ReconPars,time)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
-nscan = floor(time/3500)+1;
+nscan = floor(time/AcqPars.onescantime)+1;
 S = size(Path(:,:,:,nscan));
-time_gap = 250;
+time_gap = ReconPars.recontimeres;
 [x,y,z] = ndgrid(1:S(1),1:S(2),1:S(3));
 s =Path(:,:,:,nscan);
 % s1 = ones(S);
@@ -18,4 +18,3 @@ xlabel('ky')
 ylabel('kx')
 zlabel('kz')
 end
-

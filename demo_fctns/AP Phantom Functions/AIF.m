@@ -8,6 +8,7 @@ t = (t/6e4).*(t>0); %convert from seconds to minutes
 % popG1p = {0.809,.04,.1005};  
 % popG2p = {.33, .132,.365}; 
 % popSp  = {1.05, .1985, 38.078, 0.783}; 
+%% Parker's model
 popG1p = {.809,.0563,.1705}; %A1,sigma1, T1
 popG2p = {.33, .132,.365}; %A2, sigma2, T2
 popSp  = {1.05, .1685, 38.078, 0.483}; % alpha, beta, s, tao

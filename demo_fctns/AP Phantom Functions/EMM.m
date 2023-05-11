@@ -13,7 +13,9 @@ parse(p,varargin{:})
 EMMp = p.Results.EMMp;
 % EMMp = num2cell(cell2mat(p.Results.EMMp)+randn(size(p.Results.EMMp)).*cell2mat(SD));
 
-con = EMMp{1}.*(1-exp(-EMMp{2}.*(t-EMMp{3}))).*(t > EMMp{3});
+Sig = EMMp{1}.*(1-exp(-EMMp{2}.*(t-EMMp{3}))).*(t > EMMp{3});
+con = sig2con_EMM(Sig);
 % con = (EMMp{1}.*(EMMp{2}.*(t-EMMp{3})).^2)./(1+(EMMp{2}.*(t-EMMp{3})).^2).*(t > EMMp{3});
-maxcon = max(EMMp{1}(:));
+maxSig = max(EMMp{1}(:));
+maxcon = sig2con_EMM(maxSig);
 end
